@@ -63,6 +63,7 @@ function fetchJs(property) {
   addScript('./properties/'+property+'.js', function () {
     var codeData = getData();
     updateCode(codeData.html, codeData.css, codeData.js, property);
+    document.getElementById('title-text').innerText = property;
   })
 }
 

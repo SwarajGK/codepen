@@ -1,40 +1,99 @@
-.blocks {
-  width: 32%;
-  height: 250px;
-  overflow: scroll;
-  background: #f4f4f9;
-  font-size: 14px;
-}
-
-.property-block {
-  text-align: left;
-}
-
-.property-value {
-  text-align: left;
-  padding: 20px 40px 20px 10px;
-  border: 2px solid gray;
-  margin-bottom: 5px;
-  cursor: pointer;
-}
-
-.property-value--active {
-  border-color: blue;
-}
-
-iframe {
-  bottom: 0;
-  position: relative;
-  width: 100%;
-  height: 400px;
-}
-
 .run-wrapper {
   text-align: center;
-  padding: 20px;
 }
 
 .run-button {
-  width: 200px;
-  height: 40px;
+  width: 100px;
+  height: 30px;
+  background-color: #009cfc;
+  border: none;
+  color: white;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.run-button:hover {
+  background-color: #236999;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+.aside {
+  width: 35%;
+  border-right: 1px solid #ddd;
+  box-shadow: 0 0 8px #ddd;
+  float: left;
+  height: 100%;
+}
+
+.demo {
+  width: 65%;
+}
+
+.header {
+  border-bottom: 1px solid #ddd;
+  padding: 20px;
+  height: 10%;
+}
+
+html, body, .demo {
+  height: 100%;
+}
+
+.aside div {
+  width: 100%;
+  height: 215px;
+  min-height: 33.33%;
+  border-bottom: 1px solid #ddd;
+  position: relative;
+}
+
+.aside textarea {
+  width: 100%;
+  resize: none;
+  height: 100%;
+  border: 0;
+  padding: 10px;
+  color: #333;
+}
+
+.aside span {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  border: 1px solid #eee;
+  border-radius: 3px;
+  background-color: #f5f5f5;
+  padding: 3px 5px;
+  font-size: 12px;
+  font-family: menlo;
+}
+
+.header:after {
+  clear: both;
+  display: table;
+  content: '';
+}
+
+.demo {
+  float: left;
+  font-family: menlo;
+}
+
+h3 {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 30px;
+  float: left;
+}
+.demo-main {
+  width: 100%;
+  height: 580px;
+  min-height: 90%;
 }
