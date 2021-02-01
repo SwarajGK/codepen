@@ -21,7 +21,7 @@ function backdropFilterCss() {
     '.content {'+ '\n' +
     '  width: 300px;'+ '\n' +
     '  margin: 0 auto;'+ '\n' +
-    '  backdrop-filter: grayscale(1) blur(5px);'+ '\n' +
+    '  filter: blur(5px);'+ '\n' +
     '}'
   );
 }

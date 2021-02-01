@@ -1,9 +1,12 @@
+<!-- <!DOCTYPE html>
 <html>
 
 <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
   <title>Code Editor</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <link rel="stylesheet" href="./css/style.css" />
+  <link href="./demo-css/style.css" rel="stylesheet" type="text/css">
 </head>
 
 <body>
@@ -28,8 +31,49 @@
       <iframe class="demo-main" id="code"></iframe>
     </div>
   </div>
-  <script type="text/javascript" src="./script/utils.js"></script>
-  <script type="text/javascript" src="./script/app.js"></script>
+  <script type="text/javascript" src="./demo-script/utils.js"></script>
+  <script type="text/javascript" src="./demo-script/app.js"></script>
 </body>
 
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex" />
+  <title>Code Editor</title>
+  <link href="/demo-css/style.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+  <div class="main">
+    <div class="aside">
+      <div>
+        <span>HTML</span>
+        <textarea class="blocks" id="html" placeholder="HTML"></textarea>
+      </div>
+      <div><span>CSS</span><textarea class="blocks" id="css" placeholder="CSS"></textarea></div>
+      <div><span>JavaScript</span>
+        <textarea class="blocks" id="js" placeholder="JS"></textarea>
+      </div>
+    </div>
+    <div class="demo">
+      <div class="header">
+        <h3>Currently Showing: <strong id="title-text"></strong></h3>
+        <div class="run-wrapper">
+          <button id="run" class="run-button">Run</button>
+        </div>
+      </div>
+      <iframe class="demo-main" id="code"></iframe>
+    </div>
+  </div>
+  <script type="text/javascript">
+    // NOTE: Keep adding new properties to the constant file in ruby
+    // We check if prperty exist then only render this page, otherwise keep the default
+    var property = "flexbox";
+  </script>
+  <script type="text/javascript" src="/demo-script/utils.js"></script>
+  <script type="text/javascript" src="/demo-script/app.js"></script>
+</body>
 </html>

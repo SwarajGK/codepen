@@ -1,5 +1,5 @@
 .run-wrapper {
-  text-align: center;
+  text-align: right;
 }
 
 .run-button {
@@ -16,6 +16,9 @@
   background-color: #236999;
 }
 
+.main {
+  height: 100%;
+}
 
 * {
   margin: 0;
@@ -40,6 +43,7 @@
   border-bottom: 1px solid #ddd;
   padding: 20px;
   height: 10%;
+  box-shadow: 0 0 8px #ddd;
 }
 
 html, body, .demo {
@@ -96,4 +100,5 @@ h3 {
   width: 100%;
   height: 580px;
   min-height: 90%;
+  border: 0;
 }
